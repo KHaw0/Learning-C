@@ -1,16 +1,18 @@
-#include<stdio.h>
+#include <stdio.h>
+
 int main(){
 
-    float width, capacit_sph, capacit_waste, r;
+    int length;
+    int width;
+    int area;
 
-    printf("Width: ");
-    scanf("%f",&width);
+    printf("length = ");
+    scanf("%d", &length);
 
-    r = width / 2;
-    capacit_sph = (float)4 / 3 * 3.141592653589793 * r * r * r;
-    capacit_waste = width * width * width - capacit_sph;
+    printf("width = ");
+    scanf("%d", &width);
 
-    printf("capacit_sph = %.3f\n",capacit_sph);
-    printf("capacit_waste = %.3f",capacit_waste);
+    printf("area = %d",length * width);
 
+    return 0;
 }
